@@ -1,0 +1,199 @@
+$light-col: #e8e8e8
+$white-col: #ffffff
+$black-col: #000000
+$red-col: #e62b1e
+$gray-col: #333333
+$lightgray-col: #f3f3f3
+$midgray-col: #dddddd
+$darkgray-col: #252525
+$middarkgray-col: #666666
+$notvalid-col: #bf0c00
+body
+    background-color: $light-col
+    font-family: Arial
+    font-size: 16px
+.inside
+    width: 100vw
+    height: 100vh
+    display: flex
+    justify-content: center
+    align-items: center
+.close-button
+        position: absolute
+        background: none
+        top: 15px
+        right: 15px
+        cursor: pointer
+        height: 15px
+        width: 15px
+        transition: all .2s
+        &:hover
+            transform: rotate(90deg)
+        &:focus
+            outline: none
+.form
+    background-color: $white-col
+    box-shadow: 0px 2px 1.8px 0.2px rgba(0, 0, 0, 0.25)
+    width: 840px
+    height: 500px
+    border-top: 2px solid $red-col
+    z-index: 5
+    position: relative
+    &__title
+        color: $gray-col
+        font-size: 1.94rem
+        text-align: center
+        padding-top: 25px
+        padding-bottom: 25px
+    &__wrapper
+        position: relative
+        display: flex
+        flex-wrap: nowrap
+        height: 330px
+        &:before
+            content: ''
+            position: absolute
+            width: 1px
+            height: 250px
+            margin-left: 50%
+            margin-top: 40px
+            background-color: $black-col
+            opacity: .15
+    &__button
+        display: block
+        position: relative
+        width: 300px
+        height: 40px
+        margin-bottom: 20px
+        font-weight: bold
+        font-size: .87rem
+        line-height: 40px
+        text-align: left
+        padding-left: 94px
+        border-radius: 3px
+        color: $white-col
+        transition: all .2s
+        &--facebook
+            background-color: #3e5b96
+            &:before
+                content: ''
+                position: absolute
+                top: 8px
+                left: 15px
+                z-index: 10
+                background: url(../img/fb-ico.png)
+                width: 30px
+                height: 24px
+            &:hover
+                background-color: darken(#3e5b96, 15%)
+        &--google
+            background-color: #dd5342
+            &:before
+                content: ''
+                position: absolute
+                top: 8px
+                left: 12px
+                z-index: 10
+                background: url(../img/google-ico.png)
+                width: 30px
+                height: 24px
+            &:hover
+                background-color: darken(#dd5342, 15%)
+            
+        
+    &__social-side
+        background-color: $lightgray-col
+        padding: 40px 60px
+    &__login-side
+        background-color: $lightgray-col
+        padding: 40px 60px
+    &__login-form
+        font-weight: bold
+        font-size: .875rem
+        color: $gray-col
+        & label
+            display: block
+            margin-bottom: 7px
+    &__password-label
+        margin-top: 22px
+    &__field-text
+      border: 1px solid $midgray-col
+      border-radius: 3px
+      background-color: $white-col
+      font-size: 1.05rem
+      width: 300px
+      height: 40px
+    &__checkbox
+        display: none
+    &__checkbox-label
+        display: inline-block
+        cursor: pointer
+        position: relative
+        padding-left: 18px
+        margin-right: 15px
+        padding-top: 22px
+        &:before
+            content: ""
+            display: inline-block
+            width: 12px
+            height: 12px
+            margin-right: 6px
+            position: absolute
+            border-radius: 4px
+            left: 0
+            bottom: 1px
+            background-color: $white-col
+            border: 1px solid $midgray-col
+    &__footer
+      font-size: 1.125rem
+      color: $middarkgray-col
+      line-height: 1
+      text-align: center
+      padding: 28px 0
+.form__field-text.notvalid
+    outline: 1px solid $notvalid-col
+.notvalid-text
+    color: $notvalid-col
+.form__checkbox:checked + .form__checkbox-label:before
+            background: url('../img/checkbox-ico.png')
+            border: none
+.login-action-wrapper
+    display: flex
+    margin-top: 22px
+    justify-content: space-between
+    align-items: center
+input.action-button
+    background-color: $darkgray-col
+    color: $white-col
+    cursor: pointer
+    border-radius: 3px
+    padding: 12px 31px
+    transition: all .2s
+    &:hover
+        background-color: $middarkgray-col
+.link
+    display: inline-block
+    position: relative
+    color: $darkgray-col
+    font-weight: bold
+    line-height: 1.286
+    &:after
+        content: ''
+        left: 0
+        bottom: -1px
+        position: absolute
+        width: 100%
+        height: 2px
+        background-color: $darkgray-col
+    &:hover
+        color: $middarkgray-col
+        &:after
+            background-color: $middarkgray-col
+
+
+    
+
+
+
+
+

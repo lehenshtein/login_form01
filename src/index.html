@@ -1,0 +1,31 @@
+@@include('template/head.html')
+@@include('template/header.html')
+<div class="inside">
+    <div class="form">
+         <header>
+             <button class="close-button"><img src="img/close.png" alt="close"></button>
+            <h2 class="form__title">Log in to the Site</h2>
+         </header>
+        <section class="form__wrapper">
+            <div class="form__social-side">
+                <a href="#" class="form__button form__button--facebook">Log in with Facebook</a>
+                <a href="#" class="form__button form__button--google">Log in with Google +</a>
+            </div>
+
+            <div class="form__login-side">
+                <form action="" method="post" id="login-form" class="form__login-form">
+                    <label for="login">Login</label><input type="text" name="login" id="login" class="form__field-text">
+                    <label for="password" class="form__password-label">Password</label><input type="password" name="password" id="password" class="form__field-text">
+                    <input type="checkbox" id="remember-me" class="form__checkbox"><label for="remember-me" class="form__checkbox-label">Remember me</label>
+                    <div class="login-action-wrapper">
+                        <input type="submit" id="send-data" value="Log In" class="action-button">
+                        <a href="#" class="link">Need help logging in?</a>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <footer class="form__footer">Dont have an account yet? <a href="#" class="link">Sign up</a></footer>
+    </div>
+</div>
+	
+@@include('template/footer.html')
